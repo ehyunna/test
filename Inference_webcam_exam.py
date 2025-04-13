@@ -18,8 +18,17 @@ from collections import OrderedDict,namedtuple
 providers = ['CUDAExecutionProvider', 'CPUExecutionProvider'] if cuda else ['CPUExecutionProvider'] #['AzureExecutionProvider', 'CPUExecutionProvider'] if cuda else ['CPUExecutionProvider']
 session = ort.InferenceSession(w, providers=providers)
 
+# <<<<<<< HEAD
 
-    # [4. 9.]
+#     # [4. 9.]
+# =======
+# tf.compat.disable_v2_behavior()
+# with tf.compat.Session() as sess:
+#     x = tf.compat.placeholder(tf.float32, [2])
+#     x2 = tf.square(x)
+#     print(sess.run(x2, feed_dict={x: [2, 3]}))
+#     # [4. 9.]
+e1a40a9 (5654545)
 
 #print("00000")
 
